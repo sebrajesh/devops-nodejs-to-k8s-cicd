@@ -11,7 +11,8 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/sebrajesh/devops-nodejs-to-k8s-cicd.git'
+        git branch: 'main',
+          url: 'https://github.com/sebrajesh/devops-nodejs-to-k8s-cicd.git'
       }
     }
 
